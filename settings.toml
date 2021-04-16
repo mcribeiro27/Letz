@@ -1,0 +1,11 @@
+[default]
+SQLALCHEMY_DATABASE_URI = "sqlite:///letz.db"
+SQLALCHEMY_TRACK_MODIFICATIONS = false
+JWT_SECRET_KEY = 'NaoRevelePraNinguem'
+EXTENSIONS= [
+    "pokemon.ext.command",
+    "pokemon.ext.database",
+    "pokemon.ext.jwt",
+    "pokemon.blueprints.index",
+    "pokemon.blueprints.api"
+]
