@@ -25,10 +25,11 @@ class TrainerModel(db.Model):
         
 
     def json(self):
-        res = ''
+        res = 0
         if self.pokemonOwned:
             poke = [pokemon.json() for pokemon in self.pokemonOwned]
-            res = poke[0]['id']
+            # res = poke[0]['id']
+            res = len(poke)
         return {
             'id': self.id_trainer,
             'nickname': self.nickname,
