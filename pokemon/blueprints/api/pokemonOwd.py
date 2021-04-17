@@ -5,11 +5,11 @@ from flask_jwt_extended import jwt_required
 
 
 param = reqparse.RequestParser()
-param.add_argument('id_poke_owd')
-param.add_argument('name')
-param.add_argument('level')
-param.add_argument('pokemon_id')
-param.add_argument('trainer')
+param.add_argument('id_poke_owd', type=int)
+param.add_argument('name', type=str)
+param.add_argument('level', type=int)
+param.add_argument('pokemon_id', type=int, required=True)
+param.add_argument('trainer', type=int)
 
 class PokemonOwned(Resource):
 

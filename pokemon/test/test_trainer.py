@@ -3,7 +3,7 @@ import json
 
 
 def test_post_status():
-    url = 'http://127.0.0.1:5000/trainer/'
+    url = 'http://127.0.0.1:5000/trainer'
     headers = {
         'Content-Type': 'application/json'
     }
@@ -22,7 +22,7 @@ def test_get_status():
     headers = {
         'Content-Type': 'application/json'
     }
-    url = 'http://127.0.0.1:5000/trainer/'
+    url = 'http://127.0.0.1:5000/trainer'
 
     resposta = requests.get(url, headers=headers)
     assert resposta.status_code == 200

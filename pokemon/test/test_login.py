@@ -15,6 +15,4 @@ def test_authenticate_status():
     }
     resposta = requests.post(url, headers=headers, data=json.dumps(payload))
     assert resposta.status_code == 200
-    response_content = json.loads(resposta.content.decode('utf-8'))
-    token = response_content['access_token']
-    return token
+    
