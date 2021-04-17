@@ -52,6 +52,7 @@ Ao iniciar o sistema teremos que criar o banco de dados, o sistema está configu
 Para criar o banco execute o seguinte comando:
 ```commandline
 flask create-db
+flask run
 ```
 Ao executar sera creado o banco. Apartir daí podemos testar os end-points.
 
