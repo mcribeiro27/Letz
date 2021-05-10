@@ -15,7 +15,7 @@ Para acessar a api serão necessários os seguites requisitos:
 - [Python 3.9: necessário para a execução do sistema](www.python.org/)
 - [Postman: necessário para o teste da API](www.postman.com)
 
-## Desemvolvimento
+## Desenvolvimento
 
 Para iniciar o desenvolvimento, é necessário clonar o projeto do github em um diretório de sua preferência.
 
